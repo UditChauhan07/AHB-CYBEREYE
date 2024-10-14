@@ -172,6 +172,7 @@ border-radius: 8px;
    margin: 0px;
    padding: 70px 40px 0 35px;
    list-style: none;
+   gap: 20px;
    
    width: 200px;
   border-radius: 15px 0 0 15px;
@@ -192,7 +193,7 @@ border-radius: 8px;
   border-bottom: 0px;
 }
 #vertical_tab_nav li a{
-   display: block;
+   display: grid;
    font-size: 14pt;
    color: #fff;
    text-decoration: none;
@@ -225,6 +226,7 @@ border-radius: 8px;
 
 #vertical_tab_nav li a.selected p{
     color:#3699E2;;
+    margin: 0;
 }
 
 #vertical_tab_nav .Controlldiv{
