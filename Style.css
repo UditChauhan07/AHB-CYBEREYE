@@ -29,7 +29,7 @@
     width: 200px;
     background-color: rgb(255, 255, 255);
     /* border: 1px solid ; */
-    padding: 0 30px 0 10px;
+    padding: 0 30px 0 13px;
     border-right: 1px solid #D9D9D9;
 }
 
@@ -45,6 +45,10 @@
 .centersvg{
     display: flex;
     justify-content: center;
+}
+
+.centersvg svg{
+    height: 50px;
 }
 
 
@@ -168,7 +172,7 @@ border-radius: 8px;
     width: 100%;
 }
 #vertical_tab_nav .UlCtono{
-   display: grid;
+   display: block;
    margin: 0px;
    padding: 70px 40px 0 35px;
    list-style: none;
@@ -182,24 +186,27 @@ border-radius: 8px;
 	margin-bottom: 1px;
    text-align: left;
    padding: 0px;
+   width: 100px;
+   height: 100px;
 }
-#vertical_tab_nav li:hover {
+/* #vertical_tab_nav li:hover {
 	margin-bottom: 1px;
 	text-align: left;
 	padding: 2px;
-}
+} */
 #vertical_tab_nav li:last-child{
    margin-bottom: 0px;
   border-bottom: 0px;
 }
 #vertical_tab_nav li a{
-   display: grid;
-   font-size: 14pt;
+   display: block;
+   width: 100%;
+   font-size: 16px;
    color: #fff;
    text-decoration: none;
-   padding: 4%;
+   padding: 15px;
    /* background: #6c5a9d; */
-  /* background: -webkit-linear-gradient(top,#A79ACB,#6c5a9d); */
+  /* background: -webkit-linear-gradient(top,#A79ACB,#6c5a9d); */ */
   /* background: -moz-linear-gradient(top,#A79ACB,#6c5a9d); */
 }
 #vertical_tab_nav li a.selected p{
@@ -217,6 +224,8 @@ border-radius: 8px;
 #vertical_tab_nav li a p{
     color: #B4B6AF;
     white-space: nowrap;
+    margin: 0;
+    width: 100%;
 }
 
 #vertical_tab_nav li a.selected svg path{
@@ -226,7 +235,7 @@ border-radius: 8px;
 
 #vertical_tab_nav li a.selected p{
     color:#3699E2;;
-    margin: 0;
+ 
 }
 
 #vertical_tab_nav .Controlldiv{
