@@ -45,6 +45,7 @@
 .centersvg{
     display: flex;
     justify-content: center;
+    pointer-events: none;
 }
 
 .centersvg svg{
@@ -199,17 +200,19 @@ border-radius: 8px;
   border-bottom: 0px;
 }
 #vertical_tab_nav li a{
-   display: block;
+   display: grid;
+   justify-content: center;
+   white-space: nowrap;
    width: 100%;
    font-size: 16px;
-   color: #fff;
+   color: #B4B6AF;
    text-decoration: none;
    padding: 15px;
    /* background: #6c5a9d; */
   /* background: -webkit-linear-gradient(top,#A79ACB,#6c5a9d); */ */
   /* background: -moz-linear-gradient(top,#A79ACB,#6c5a9d); */
 }
-#vertical_tab_nav li a.selected p{
+#vertical_tab_nav li a.selected{
    /* background: #efefef; */
    color: #3699E2;
 }
