@@ -6,6 +6,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="Style.css">
     <title>CyberEye</title>
+
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false" ></script>
 </head>
 <body>
 
@@ -51,7 +53,7 @@
 
 
             <div class="Profile">
-<h6>Kruluz Utsman</h6>
+<h6>Hamad Al Awadhi</h6>
 <div class=" ProfilePic">
     <img src="./images/ProfilePic.png">
 
@@ -69,6 +71,7 @@
 <!-- tabs section -->
 <div id="vertical_tab_nav">
 
+    
     <ul class="UlCtono">
         <li class="selected">
             <a href="index.html">
@@ -130,7 +133,11 @@
             Daily Scan</a></li>
     </ul>
 
+
+
     <div class="Controlldiv">
+
+        <!-- overview -->
         <article>
            <div>
             <div class="mboxdiv">
@@ -233,79 +240,378 @@
 
            <!-- chart -->
 
-<div  class="flexdivdd">
+           <div  class="flexdivdd">
            
          
-           <div class="chart-container">
-<div class="mainChartr">
-    <div class="innnerChart">
-        <h3>Market Overview</h3>
-        <h5>7.2141,997.5 (25%)</h5>
-    </div>
+            <div class="chart-container">
+ <div class="mainChartr">
+     <div class="innnerChart">
+         <h3>Market Overview</h3>
+         <h5>7.2141,997.5 (25%)</h5>
+     </div>
+ 
+             <div class="tabs">
+               <button class="tab active" onclick="updateChart('all', 'myChart1' )">ALL</button>
+               <button class="tab" onclick="updateChart('1M', 'myChart1')">1M</button>
+               <button class="tab" onclick="updateChart('6M', 'myChart1')">6M</button>
+               <button class="tab" onclick="updateChart('1Y', 'myChart1')">1Y</button>
+               <button class="tab" onclick="updateChart('YTD' , 'myChart1')">YTD</button>
+             </div>
+         </div>
+             <canvas id="myChart1"></canvas>
+           </div>
+ 
+             <!-- end chart -->
+ 
+ <div class="thridColumn">
+     <div class="mainBBOX">
+         <div class="boxTopThrid">
+         <div class="Box1thrid">
+             <div class="inner1thrid"> <img src="./images/Coins.svg"> </div>
+             <div class="inner2thrid">
+                 <p>Most attacked branch</p>
+              </div>
+         </div>
+         <h6>Adnocgas</h6>
+     </div>
+ 
+ 
+     </div>
+     
+     <div class="mainBBOX">
+         <div class="boxTopThrid">
+         <div class="Box1thrid">
+             <div class="inner1thrid"> <img src="./images/Coins.svg"></div>
+             <div class="inner2thrid">
+                 
+                 <p>Most attacked Sector</p>
+              </div>
+         </div>
+         <h6>Finance</h6>
+     </div>
+ 
+ 
+     </div>
+ 
+ </div>
+ 
+ </div>
 
-            <div class="tabs">
-              <button class="tab active" onclick="updateChart('all')">ALL</button>
-              <button class="tab" onclick="updateChart('1M')">1M</button>
-              <button class="tab" onclick="updateChart('6M')">6M</button>
-              <button class="tab" onclick="updateChart('1Y')">1Y</button>
-              <button class="tab" onclick="updateChart('YTD')">YTD</button>
+        </article>
+        <!-- overview -->
+
+
+
+        <!-- Geo Locator -->
+        <article>
+            
+            <div id="map">
+                <div id="map-canvas" style="height: 500px; width: 100%;"></div>
             </div>
-        </div>
-            <canvas id="myChart"></canvas>
+            
+        </article>
+        <!-- Geo Locator -->
+
+
+        <!-- Social Medai -->
+        <article>
+                <div>
+                 <div class="mboxdiv">
+                     <div class="mainBBOX">
+                         <div class="boxTop">
+                         <div class="Box1">
+                             <div class="inner1"> <p>52</p></div>
+                             <div class="inner2">
+                                 <img src="./images/GreenLine.svg">
+                              </div>
+                         </div><p>
+                         Social-Media
+                         Impersonation                     </div>
+     
+     
+                     </div>
+     
+     
+                     <div class="mainBBOX">
+                         <div class="boxTop">
+                         <div class="Box1">
+                             <div class="inner1"> <p>23</p></div>
+                             <div class="inner2">
+                                 <img src="./images/GreenLine.svg">
+                              </div>
+                         </div>
+                         <p>Fake job offerings
+                        </p>
+                     </div>
+     
+     
+                     </div>
+     
+     
+                     <div class="mainBBOX">
+                         <div class="boxTop">
+                         <div class="Box1">
+                             <div class="inner1"> <p>20</p></div>
+                             <div class="inner2">
+                                 <img src="./images/RedLine.svg">
+                              </div>
+                         </div>
+                         <p>Damage to reputation attempts
+                        </p>
+                     </div>
+     
+     
+                     </div>
+     
+     
+                     <div class="mainBBOX">
+                         <div class="boxTop">
+                         <div class="Box1">
+                             <div class="inner1"> <p>72</p></div>
+                             <div class="inner2">
+                                 <img src="./images/GreenLine.svg">
+                              </div>
+                         </div>
+                         <p>Attacks Mitigated
+                        </p>
+                     </div>
+     
+     
+                     </div>
+     
+     
+                     <div class="mainBBOX">
+                         <div class="boxTop">
+                         <div class="Box1">
+                             <div class="inner1"> <p>51</p></div>
+                             <div class="inner2">
+                                 <img src="./images/GreenLine.svg">
+                              </div>
+                         </div>
+                         <p>Account takedown 
+                        </p>
+                     </div>
+     
+     
+                     </div>
+     
+     
+                     <div class="mainBBOX">
+                         <div class="boxTop">
+                         <div class="Box1">
+                             <div class="inner1"> <p>23</p></div>
+                             <div class="inner2">
+                                 <img src="./images/RedLine.svg">
+                              </div>
+                         </div>
+                         <p>Accounts Investigations
+                        </p>
+                     </div>
+     
+     
+                     </div>
+     
+     
+                    
+     
+                 </div>
+     
+                </div>
+     
+     
+                <!-- chart -->
+     
+                <div  class="flexdivdd">
+           
+         
+                    <div class="chart-container">
+         <div class="mainChartr">
+             <div class="innnerChart">
+                 <h3>Market Overview</h3>
+                 <h5>7.2141,997.5 (25%)</h5>
+             </div>
+         
+                     <div class="tabs">
+                       <button class="tab active" onclick="updateChart('all', 'myChart2' )">ALL</button>
+                       <button class="tab" onclick="updateChart('1M', 'myChart2')">1M</button>
+                       <button class="tab" onclick="updateChart('6M', 'myChart2')">6M</button>
+                       <button class="tab" onclick="updateChart('1Y', 'myChart2')">1Y</button>
+                       <button class="tab" onclick="updateChart('YTD' , 'myChart2')">YTD</button>
+                     </div>
+                 </div>
+                     <canvas id="myChart2"></canvas>
+                   </div>
+         
+                     <!-- end chart -->
+         
+         <div class="thridColumn">
+             <div class="mainBBOX">
+                 <div class="boxTopThrid">
+                 <div class="Box1thrid">
+                     <div class="inner1thrid"> <img src="./images/Coins.svg"> </div>
+                     <div class="inner2thrid">
+                         <p>Most impersonation usage</p>
+                      </div>
+                 </div>
+                 <h6>Fake Jobs</h6>
+             </div>
+         
+         
+             </div>
+             
+            
+         
+         </div>
+         
+         </div>
+     
+             
+            
+           
+        </article>
+        <!-- Social Medai -->
+
+
+
+        <!-- Daily Scan -->
+        <article>
+            <div>
+             <div class="mboxdiv">
+                 <div class="mainBBOX">
+                     <div class="boxTop">
+                     <div class="Box1">
+                         <div class="inner1"> <p>4</p></div>
+                         <div class="inner2">
+                             <img src="./images/GreenLine.svg">
+                          </div>
+                     </div>
+                     Domains Found
+                 </div>
+ 
+ 
+                 </div>
+ 
+ 
+                 <div class="mainBBOX">
+                     <div class="boxTop">
+                     <div class="Box1">
+                         <div class="inner1"> <p>51</p></div>
+                         <div class="inner2">
+                             <img src="./images/GreenLine.svg">
+                          </div>
+                     </div>
+                     <p>Domain Phishing</p>
+                 </div>
+ 
+ 
+                 </div>
+ 
+ 
+                 
+                 <div class="mainBBOX">
+                     <div class="boxTop">
+                     <div class="Box1">
+                         <div class="inner1"> <p>19</p></div>
+                         <div class="inner2">
+                             <img src="./images/RedLine.svg">
+                          </div>
+                     </div>
+                     <p>Domain Malware</p>
+                 </div>
+ 
+ 
+                 </div>
+ 
+ 
+                
+ 
+             </div>
+ 
+            </div>
+ 
+ 
+           
+ 
+            <div  class="flexdivdd">
+  <div class="thridColumn">
+      <div class="mainBBOX DailyScan">
+          <div class="boxTopThrid">
+          <div class="Box1thrid">
+              <div class="inner1thrid"> <img src="./images/Coins.svg"> </div>
+              <div class="inner2thrid">
+                  <p>Summary</p>
+               </div>
           </div>
+          <h6><a href="#">ADNOC.com</a></h6>
+          <ul class="ListULLI">
+            <li>Ip Address</li>
+            <li>Registrar</li>
+            <li>Purpose of domain</li>
+            <li>Geo location</li>
+          </ul>
 
-            <!-- end chart -->
-
-<div class="thridColumn">
-    <div class="mainBBOX">
-        <div class="boxTopThrid">
+      </div>
+      <div class="boxTopThrid">
         <div class="Box1thrid">
             <div class="inner1thrid"> <img src="./images/Coins.svg"> </div>
             <div class="inner2thrid">
-                <p>Most attacked branch</p>
+                <p>Summary</p>
              </div>
         </div>
-        <h6>Adnocgas</h6>
-    </div>
+        <h6><a href="#">ADNOC.com</a></h6>
+        <ul class="ListULLI">
+          <li>Ip Address</li>
+          <li>Registrar</li>
+          <li>Purpose of domain</li>
+          <li>Geo location</li>
+        </ul>
 
-
     </div>
-    
-    <div class="mainBBOX">
-        <div class="boxTopThrid">
+    <div class="boxTopThrid">
         <div class="Box1thrid">
-            <div class="inner1thrid"> <img src="./images/Coins.svg"></div>
+            <div class="inner1thrid"> <img src="./images/Coins.svg"> </div>
             <div class="inner2thrid">
-                
-                <p>Most attacked Sector</p>
+                <p>Summary</p>
              </div>
         </div>
-        <h6>Finance</h6>
+        <h6><a href="#">ADNOC.com</a></h6>
+        <ul class="ListULLI">
+          <li>Ip Address</li>
+          <li>Registrar</li>
+          <li>Purpose of domain</li>
+          <li>Geo location</li>
+        </ul>
+
     </div>
-
+    <div class="boxTopThrid">
+        <div class="Box1thrid">
+            <div class="inner1thrid"> <img src="./images/Coins.svg"> </div>
+            <div class="inner2thrid">
+                <p>Summary</p>
+             </div>
+        </div>
+        <h6><a href="#">ADNOC.com</a></h6>
+        <ul class="ListULLI">
+          <li>Ip Address</li>
+          <li>Registrar</li>
+          <li>Purpose of domain</li>
+          <li>Geo location</li>
+        </ul>
 
     </div>
+  
+  
+      </div>
+      
+      
+  
+  </div>
+  
+  </div>
+ 
+         </article>
+        <!-- Daily Scan -->
 
-</div>
-
-</div>
-
-        </article>
-
-        <article>
-            <h3 style="font-size:50px;">Comming Soon...</h3>
-            
-        </article>
-
-        <article>
-            <h3 style="font-size:50px;">Comming Soon...</h3>
-           
-        </article>
-
-        <article>
-            <h3 style="font-size:50px;">Comming Soon...</h3>
-
-        </article>
         
     </div>
 </div>
@@ -381,103 +687,206 @@ $(document).ready(function(){
   
 
 
-  const ctx = document.getElementById('myChart').getContext('2d');
+const ctx1 = document.getElementById('myChart1').getContext('2d');
+const ctx2 = document.getElementById('myChart2').getContext('2d');
 
-  // Create gradient fill for both datasets
-  const gradient1 = ctx.createLinearGradient(0, 0, 0, 400);
-  gradient1.addColorStop(0, 'rgba(75, 192, 192, 0.5)');
-  gradient1.addColorStop(1, 'rgba(75, 192, 192, 0)');
+// Create gradient fill for both datasets (reuse the same gradients)
+const gradient1 = ctx1.createLinearGradient(0, 0, 0, 400);
+gradient1.addColorStop(0, 'rgba(75, 192, 192, 0.5)');
+gradient1.addColorStop(1, 'rgba(75, 192, 192, 0)');
 
-  const gradient2 = ctx.createLinearGradient(0, 0, 0, 400);
-  gradient2.addColorStop(0, 'rgba(54, 162, 235, 0.5)');
-  gradient2.addColorStop(1, 'rgba(54, 162, 235, 0)');
+const gradient2 = ctx1.createLinearGradient(0, 0, 0, 400);
+gradient2.addColorStop(0, 'rgba(54, 162, 235, 0.5)');
+gradient2.addColorStop(1, 'rgba(54, 162, 235, 0)');
 
-  const chartData = {
-    all: {
-      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
-      dataset1: [376, 400, 450, 420, 500, 480, 530, 600, 580, 620],
-      dataset2: [300, 350, 400, 380, 420, 440, 480, 510, 490, 530]
-    },
-    '1M': { labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'], dataset1: [400, 420, 460, 480], dataset2: [380, 390, 410, 430] },
+const chartData = {
+  all: {
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+    dataset1: [376, 400, 450, 420, 500, 480, 530, 600, 580, 620],
+    dataset2: [300, 350, 400, 380, 420, 440, 480, 510, 490, 530]
+  },
+  '1M': { labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'], dataset1: [400, 420, 460, 480], dataset2: [380, 390, 410, 430] },
     '6M': { labels: ['Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'], dataset1: [500, 480, 530, 600, 580, 620], dataset2: [420, 440, 480, 510, 490, 530] },
     '1Y': { labels: ['Q1', 'Q2', 'Q3', 'Q4'], dataset1: [450, 500, 600, 620], dataset2: [400, 440, 490, 530] },
     'YTD': { labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'], dataset1: [376, 400, 450, 420, 500], dataset2: [300, 350, 400, 380, 420] }
-  };
+};
 
-  let chart;
+// Store chart instances for both charts
+let chart1, chart2;
 
-  function initializeChart(data) {
-    chart = new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: data.labels,
-        datasets: [
-          {
-            label: 'Dataset 1',
-            data: data.dataset1,
-            borderColor: '#4caf50',
-            backgroundColor: gradient1,
-            fill: true,
-            tension: 0.4
-          },
-          {
-            label: 'Dataset 2',
-            data: data.dataset2,
-            borderColor: '#36a2eb',
-            backgroundColor: gradient2,
-            fill: true,
-            tension: 0.4
-          }
-        ]
-      },
-      options: {
-        responsive: true,
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-            mode: 'index',
-            intersect: false
-          }
+// Function to create or update a chart
+function initializeChart(chartInstance, ctx, data) {
+  if (chartInstance) {
+    updateChartData(chartInstance, data);
+  } else {
+    return createChart(ctx, data);
+  }
+}
+
+// Function to create a new chart
+function createChart(ctx, data) {
+  return new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: data.labels,
+      datasets: [
+        {
+          label: 'Dataset 1',
+          data: data.dataset1,
+          borderColor: '#4caf50',
+          backgroundColor: gradient1,
+          fill: true,
+          tension: 0.4
         },
-        interaction: {
+        {
+          label: 'Dataset 2',
+          data: data.dataset2,
+          borderColor: '#36a2eb',
+          backgroundColor: gradient2,
+          fill: true,
+          tension: 0.4
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          display: false
+        },
+        tooltip: {
           mode: 'index',
           intersect: false
+        }
+      },
+      interaction: {
+        mode: 'index',
+        intersect: false
+      },
+      scales: {
+        x: {
+          display: true
         },
-        scales: {
-          x: {
-            display: true
-          },
-          y: {
-            display: true
-          }
+        y: {
+          display: true
         }
       }
-    });
+    }
+  });
+}
+
+// Function to update chart data
+function updateChartData(chart, data) {
+  chart.data.labels = data.labels;
+  chart.data.datasets[0].data = data.dataset1;
+  chart.data.datasets[1].data = data.dataset2;
+  chart.update();
+}
+
+// Function to update a specific chart based on range and chart ID
+function updateChart(range, chartId) {
+  const data = chartData[range];
+  let chartInstance;
+
+  // Choose the appropriate chart instance
+  if (chartId === 'myChart1') {
+    chartInstance = chart1;
+    chart1 = initializeChart(chart1, ctx1, data);
+  } else if (chartId === 'myChart2') {
+    chartInstance = chart2;
+    chart2 = initializeChart(chart2, ctx2, data);
   }
 
-  function updateChart(range) {
-    const data = chartData[range];
-    chart.data.labels = data.labels;
-    chart.data.datasets[0].data = data.dataset1;
-    chart.data.datasets[1].data = data.dataset2;
-    chart.update();
+  setActiveTab(range, chartId);
+}
 
-    const buttons = document.querySelectorAll('.tab');
-    buttons.forEach(btn => btn.classList.remove('active'));
-    document.querySelector(`button[onclick="updateChart('${range}')"]`).classList.add('active');
-  }
+// Function to handle active tab UI logic for multiple charts
+function setActiveTab(range, chartId) {
+  const buttons = document.querySelectorAll(`.tab`);
+  buttons.forEach(btn => btn.classList.remove('active'));
+  document.querySelector(`button[onclick="updateChart('${range}', '${chartId}')"]`).classList.add('active');
+}
 
-  initializeChart(chartData.all);
-
+// Initialize both charts with 'all' data initially
+chart1 = createChart(ctx1, chartData.all);
+chart2 = createChart(ctx2, chartData.all);
 
 
 // chart end
 
+// GEoLocator
+// GEoLocator
 
 
 
+</script>
+
+<script>
+    function initialise() {
+		var myLatlng = new google.maps.LatLng(41.850033, -87.6500523); // Add the coordinates
+
+        var personDetails =
+          [{
+            name: 'Alex',
+            desc: 'Liver, Pancreas, and Intestinal Transplant',
+            year: '2004 and 2017',
+            place: 'Enderlin, North Dakota',
+            image: 'https://www.pattonwebz.com/wp-content/uploads/2019/04/x20190226_134455-300x225.jpg.pagespeed.ic.NEaONuszvx.webp',
+          }];
+
+		var mapOptions = {
+			zoom: 3.5, // The initial zoom level when your map loads (0-20)
+			minZoom: 3, // Minimum zoom level allowed (0-20)
+			maxZoom: 17, // Maximum soom level allowed (0-20)
+			zoomControl:true, // Set to true if using zoomControlOptions below, or false to remove all zoom controls.
+			zoomControlOptions: {
+  				style:google.maps.ZoomControlStyle.DEFAULT // Change to SMALL to force just the + and - buttons.
+			},
+			center: myLatlng, // Centre the Map to our coordinates variable
+			mapTypeId: google.maps.MapTypeId.ROADMAP, // Set the type of Map
+			scrollwheel: false, // Disable Mouse Scroll zooming (Essential for responsive sites!)
+			// All of the below are set to true by default, so simply remove if set to true:
+			panControl:false, // Set to false to disable
+			mapTypeControl:false, // Disable Map/Satellite switch
+			scaleControl:false, // Set to false to hide scale
+			streetViewControl:false, // Set to disable to hide street view
+			overviewMapControl:false, // Set to false to remove overview control
+			rotateControl:false // Set to false to disable rotate control
+	  	}
+		var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions); // Render our map within the empty div
+		
+        // wdhw
+        var image = {
+        url: './images/Coins.svg', // Replace with your image URL or path
+        size: new google.maps.Size(40, 52), // Size of the icon
+        origin: new google.maps.Point(0, 0), // The origin point (top-left corner)
+        anchor: new google.maps.Point(20, 52) // Positioning the icon's anchor point
+
+        
+
+
+    };
+
+    
+
+
+// fhef
+
+		var marker = new google.maps.Marker({ // Set the marker
+			position: myLatlng, // Position marker to coordinates
+			icon:image, //use our image as the marker
+			map: map, // assign the market to our map variable
+			title: 'Click here for more details' // Marker ALT Text
+		});
+		var infowindow = new google.maps.InfoWindow({ // Create a new InfoWindow
+  			content:"<p>some content</p>" // HTML contents of the InfoWindow
+  		});
+		google.maps.event.addListener(marker, 'click', function() { // Add a Click Listener to our marker
+  			infowindow.open(map,marker); // Open our InfoWindow
+  		});
+		google.maps.event.addDomListener(window, 'resize', function() { map.setCenter(myLatlng); }); // Keeps the Pin Central when resizing the browser on responsive sites
+	}
+	google.maps.event.addDomListener(window, 'load', initialise); // Execute our 'initialise' function once the page has loaded.
 </script>
 
 </body>
