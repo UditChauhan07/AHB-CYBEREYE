@@ -209,9 +209,7 @@ border-radius: 8px;
    color: #B4B6AF;
    text-decoration: none;
    padding: 15px;
-   /* background: #6c5a9d; */
-  /* background: -webkit-linear-gradient(top,#A79ACB,#6c5a9d); */ */
-  /* background: -moz-linear-gradient(top,#A79ACB,#6c5a9d); */
+  
 }
 #vertical_tab_nav li a.selected{
    /* background: #efefef; */
@@ -253,11 +251,11 @@ border-radius: 8px;
   border-radius: 0 10px 10px 0;
 }
 #vertical_tab_nav div article{
-   display: none;
+   display:block;
    margin: 0px;
    color: #000;
    font-size:18px;
-   
+  
 }
 #vertical_tab_nav div article p{
    margin: 0px 0px 0px 0px;
@@ -397,9 +395,16 @@ padding: 10px;
   
         
   .boxTopThrid h6{
-    font-size: 38px;
-    font-weight: 700;
+    font-size: 35px;
+    font-weight: 600;
+    /* padding: 10px 0; */
   }
+
+  .boxTopThrid h6 a{
+    /* text-decoration: none; */
+  }
+
+  
 
 
   .innnerChart h3{
@@ -433,6 +438,7 @@ padding: 10px;
     font-size: 14px;
     font-weight: 400;
     font-family: "poppins";
+    padding:0 0 0 0 !important;
   }
 .ListULLI li{
     height: unset !important;
@@ -450,5 +456,18 @@ padding: 10px;
 }
   /* Geo-locator */
   
+  
+
+  body {
+    margin: 0;
+  }
+  .map-container {
+    width: 100% !important;
+    height:80vh !important;
+    overflow: scroll;
+   
+  }
+  
+ 
   
   /* end Geo-Locator */
