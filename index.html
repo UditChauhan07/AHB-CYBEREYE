@@ -47,6 +47,14 @@
             <div class="notification">
 <img src="./images/Notifi-Icon.svg">
             </div>
+
+            <div class="switch">
+              <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+              <label for="language-toggle"></label>
+              <span class="on">Arabic</span>
+              <span class="off">Eng</span>
+            </div>
+
             <div class="UaeLogo">
                 <img src="./images/UAE-Logo.png">
             </div>
@@ -1062,8 +1070,11 @@ latlong.ZA = {'latitude':-29, 'longitude':24};
 latlong.ZM = {'latitude':-15, 'longitude':30};
 latlong.ZW = {'latitude':-20, 'longitude':30};
 
+
+
+
 var mapData = [
-{'code':'AF' , 'name':'Afghanistan', 'value':32358260, 'color':'#eea638'},
+{'code':'AF' , 'name':'Afghanistan', 'value':32358260, 'color':'#eea638', 'className': 'country-item'},
 {'code':'AL' , 'name':'Albania', 'value':3215988, 'color':'#d8854f'},
 {'code':'DZ' , 'name':'Algeria', 'value':35980193, 'color':'#de4c4f'},
 {'code':'AO' , 'name':'Angola', 'value':19618432, 'color':'#de4c4f'},
